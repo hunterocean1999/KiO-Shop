@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiO-Shoes</title>
+    <script src="https://kit.fontawesome.com/81db199349.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--has-qr header__navbar-items--separate ">
+                            Shop on KiO-Shoes app
+                            <div class="header__qr">
+                                <img src="./assets/img/qr.png" alt="" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/ch-play.png" alt="" class="header__qr-download">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="" class="header__qr-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items ">
+                            <span class="title">Contact</span>
+                            <a href="" class="header__navbar-icons-link"><i
+                                    class="header__navbar-icon fab fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icons-link"><i
+                                    class="header__navbar-icon fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--has-notify">
+                            <!-- <a href="" class="header__navbar-icons-link"><i class="header__navbar-icon fas fa-bell"></i></a> -->
+                            <a href="#" class="header__navbar-link">Notification</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>New notifications received</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">View all</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items">
+                            <!-- <a href="" class="header__navbar-icons-link"><i class="header__navbar-icon far fa-question-circle"></i></a> -->
+                            <a href="#" class="header__navbar-link">Help</a>
+                        </li>
+                        <li class="header__navbar-items header__navbar-items--strong header__navbar-items--separate">
+                            Sign up</li>
+                        <li class="header__navbar-items header__navbar-items--strong">Sign in</li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="index.html">
+                        <img src="./assets/img/logo.png" alt="logo" class="logo" href>
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Type to search products">
+                            <!-- Search History -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Search History </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-items">
+                                        <a href="">Adidas Stan Smith</a>
+                                    </li>
+                                    <li class="header__search-history-items">
+                                        <a href="">Adidas Supper Star</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Inside shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Inside shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Outside shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">0</span>
+
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img class="header__cart-no-cart-img" src="./assets/img/empty-cart.png" alt="">
+
+                                <h4 class="header__cart-heading">Product added</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view-cart btn btn--primary"><a href="cart.html">Check it out Cart</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid_row app__content">
+                    <div class="grid_column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fas fa-list"></i>
+                                Category
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Sneakers</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sport</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Boots</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sandals</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="grid_column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sort by</span>
+                            <button class="btn home-filter-btn">Popular</button>
+                            <button class="btn home-filter-btn btn--primary">Latest</button>
+                            <button class="btn home-filter-btn">Best seller</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Price</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Low to high price</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">High to low price</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid_row">
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Gucci Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Adidas Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Vans Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Ananas Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Nike Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Nike Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Nike Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <div class="home-product__imgBox">
+                                        <img src="./assets/img/shoes.png" alt="h1" class="home-product__img">
+                                    </div>
+                                    <div class="home-product__content">
+                                        <h2 class="home-product__content-name">
+                                            Nike Shoes
+                                        </h2>
+                                        <div class="home-product__content-price">
+                                            <h3 class="price">Price: 200$</h3>
+                                        </div>
+                                        <div class="home-product__content-size">
+                                            <h3 class="size">Size :</h3>
+                                            <span>7</span>
+                                            <span>8</span>
+                                            <span>9</span>
+                                            <span>10</span>
+                                        </div>
+                                        <div class="home-product__content-color">
+                                            <h3 class="color">Color :</h3>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#" class="home-product__content-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+
+                        <ul class="pagination pagination__home-product">
+                            <li class="pagination__item ">
+                                <a href="#" class="pagination__item-link">
+                                    <i class="pagination__item-icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item pagination__item--active">
+                                <a href="#" class="pagination__item-link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">
+                                    <i class="pagination__item-icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Customer care</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Help center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">KiO blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">KiO Mall</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> About us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Introduce about Kio Shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Recruitment</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Kio terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Category</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sneakers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sport</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Boots</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sandals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Follow us on</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-facebook"></i>Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-instagram"></i>Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-linkedin"></i>Linkedln
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Download the Kio app now</h3>
+                        <div class="footer__qr">
+                            <img src="./assets/img/qr.png" alt="" class="footer__qr--img">
+                            <div class="footer__qr--apps">
+                                <a href="#" class="footer__qr--link">
+                                    <img src="./assets/img/ch-play.png" alt="" class="footer__qr--img-app">
+                                </a>
+                                <a href="#" class="footer__qr--link">
+                                    <img src="./assets/img/app_store.png" alt="" class="footer__qr--img-app">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__license">© 2020 <span class="footer__license--name">KiO-Shoes</span>. All rights reserved</p>
+                </div>
+
+            </div>
+        </footer>
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Register form -->
+                <!-- <div class="auth--form">
+                    <div class="auth--form__container">
+                        <div class="auth--form__header">
+                            <div class="auth--form__heading">Sign up</div>
+                            <span class="auth--form__switch-btn">Sign in</span>
+                        </div>
+                        <div class="auth--form__form">
+                            <div class="auth--form__group">
+                                <input type="text" class="auth--form__user" placeholder="Your Email">
+                            </div>
+                            <div class="auth--form__group">
+                                <input type="password" class="auth--form__user" placeholder="Your Password">
+                            </div>
+                            <div class="auth--form__group">
+                                <input type="password" class="auth--form__user" placeholder="Enter the Password">
+                            </div>
+                        </div>
+                        <div class="auth--form__policy">
+                            <p class="auth--form__policy-text">
+                                By registering, you are agreeing with KiO-Shoes about
+                                <a href="" class="auth--form__policy-link">terms of service </a>&
+                                <a href="" class="auth--form__policy-link">privacy policy </a>
+                            </p>
+
+                        </div>
+                        <div class="auth--form__controls">
+                            <button class="btn auth--form__controls-back btn--normal">Back</button>
+                            <button class="btn btn--primary">Register</button>
+                        </div>
+                    </div>
+                    <div class="auth--form__socials">
+                        <a href="" class="auth--form__socials-fb btn btn--size-s btn--with-icon ">
+                            <i class=" login-icon fab fa-facebook-square"></i>
+                            <span class="auth--form__socials-text">Login with Facebook</span>
+                        </a>
+                        <a href="" class="auth--form__socials-gg btn btn--size-s btn--with-icon">
+                            <i class="login-icon fab fa-google"></i>
+                            <span class="auth--form__socials-text">Login with Google</span>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Sign in form -->
+                <div class="auth--form">
+                    <div class="auth--form__container">
+                        <div class="auth--form__header">
+                            <div class="auth--form__heading">Sign in</div>
+                            <span class="auth--form__switch-btn">Sign up</span>
+                        </div>
+                        <div class="auth--form__form">
+                            <div class="auth--form__group">
+                                <input type="text" class="auth--form__user" placeholder="Your Email">
+                            </div>
+                            <div class="auth--form__group">
+                                <input type="password" class="auth--form__user" placeholder="Your Password">
+                            </div>
+                        </div>
+                        <div class="auth--form__aside">
+                            <div class="auth--form__help ">
+                                <a href="" class="auth--form__help-link auth--form__help-1 ">Forget Password</a>
+                                <span class="auth--form__help-separate"></span>
+                                <a href="" class="auth--form__help-link auth--form__help-2 ">HELP ?</a>
+                            </div>
+
+                        </div>
+                        <div class="auth--form__controls">
+                            <button class="btn auth--form__controls-back btn--normal">Back</button>
+                            <button class="btn btn--primary">Register</button>
+                        </div>
+                    </div>
+                    <div class="auth--form__socials">
+                        <a href="" class="auth--form__socials-fb btn btn--size-s btn--with-icon ">
+                            <i class=" login-icon fab fa-facebook-square"></i>
+                            <span class="auth--form__socials-text">Login with Facebook</span>
+                        </a>
+                        <a href="" class="auth--form__socials-gg btn btn--size-s btn--with-icon">
+                            <i class="login-icon fab fa-google"></i>
+                            <span class="auth--form__socials-text">Login with Google</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

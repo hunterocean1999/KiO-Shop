@@ -1,0 +1,192 @@
+
+.grid_column-2-4{
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 24%;
+    height: 370px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 12px 5px;
+}
+
+.grid_column-2-4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out ;
+}
+
+.grid_column-2-4:hover::before{
+    clip-path: circle(200px at 80% -20%);
+}
+
+.grid_column-2-4::after{
+    content: "Nike";
+    position: absolute;
+    top: 60%;
+    left: -20%;
+    font-size: 12rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+
+
+
+.home-product__imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 220px;
+    transition: .5s;
+}
+
+.grid_column-2-4:hover .home-product__imgBox{
+    top: -15%;
+    transform: translateY(0%);
+}
+
+
+
+.home-product__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(25deg);
+    width: 195px;
+    height: 195px;
+}
+
+.home-product__content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.grid_column-2-4:hover .home-product__content{
+    height: 210px;
+}
+
+.home-product__content-name{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.home-product__content-size,
+.home-product__content-color,
+.home-product__content-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.home-product__content-size .size,
+.home-product__content-color .color,
+.home-product__content-price .price{
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 0px;
+    margin-top: 4px;
+}
+
+.grid_column-2-4:hover .home-product__content-size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.grid_column-2-4:hover .home-product__content-price{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.grid_column-2-4:hover .home-product__content-color{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.home-product__content-size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background-color: var(--white-color);
+    margin: 0 5px;
+    transition: .5s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.home-product__content-color span{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.home-product__content-color span:nth-child(2){
+    background-color: #9bdc28;
+}
+.home-product__content-color span:nth-child(3){
+    background-color: #03a9f4;
+}
+.home-product__content-color span:nth-child(4){
+    background-color: #e91e63;
+}
+
+
+.home-product__content-size span:hover{
+    background-color: #9bdc28;
+}
+
+.home-product__content-buy{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .5s;
+}
+
+.grid_column-2-4:hover .home-product__content-buy{
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0.75s;
+}
+

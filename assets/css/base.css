@@ -1,0 +1,247 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --color-primary-0: #050404 ;
+    --color-primary-1: #313030 ;
+    --color-primary-2: #736D6D ;
+    --color-button:rgba(0, 136,169,1);
+    --color-primary: rgb(7, 70, 87);
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-with{
+    width: 100%;
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid_column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.66667%;
+}
+
+.grid_column-2-5{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid_column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.33334%;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from{
+        transform: scale(.7);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* MODAL */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn ease-in 0.3s;
+    display: none;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.modal__body{
+    z-index: 2;
+    margin: auto;
+    animation: growth linear .1s;
+}
+
+.auth--form__policy{
+    text-align: center;
+}
+
+/* Button style */
+.btn{
+    width: 142px;
+    height: 32px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:focus{
+    border: 1px solid var(--color-primary-0);
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 0.9rem;
+    padding: 0px 8px;
+}
+
+.btn.btn--primary{
+    background-color:  rgba(0, 136,169,1);
+    color: var(--white-color);
+}
+
+.btn.btn--primary:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transform: translate(1.5px,1.5px);
+}
+
+/* Selection */
+.select-input{
+    display: flex;
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+
+.select-input__icon{
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    padding: 12px 16px;
+    background-color: var(--white-color);
+    list-style: none;
+    display: none;
+}
+
+.select-input__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 8px 0px;
+}
+
+.select-input__link:hover{
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination__item{
+    margin-right: 32px;
+}
+
+.pagination__item--active .pagination__item-link{
+    background-color: var(--color-primary);
+    color: var(--white-color);
+}
+
+.pagination__item--active:hover .pagination__item-link{
+    background-color: rgb(75, 204, 236);
+}
+
+.pagination__item-link{
+    display: block  ;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+.pagination__home-product{
+    margin: 47px 0px 160px 0;
+}

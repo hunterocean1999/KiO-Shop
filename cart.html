@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81db199349.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--has-qr header__navbar-items--separate ">
+                            Shop on KiO-Shoes app
+                            <div class="header__qr">
+                                <img src="./assets/img/qr.png" alt="" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/ch-play.png" alt="" class="header__qr-download">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="" class="header__qr-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items ">
+                            <span class="title">Contact</span>
+                            <a href="" class="header__navbar-icons-link"><i
+                                    class="header__navbar-icon fab fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icons-link"><i
+                                    class="header__navbar-icon fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--has-notify">
+                            <!-- <a href="" class="header__navbar-icons-link"><i class="header__navbar-icon fas fa-bell"></i></a> -->
+                            <a href="#" class="header__navbar-link">Notification</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>New notifications received</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-items  header__notify-items--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/n1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">This is Name</span>
+                                                <span class="header__notify-description">This is Description</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">View all</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items">
+                            <!-- <a href="" class="header__navbar-icons-link"><i class="header__navbar-icon far fa-question-circle"></i></a> -->
+                            <a href="#" class="header__navbar-link">Help</a>
+                        </li>
+                        <li class="header__navbar-items header__navbar-items--strong header__navbar-items--separate">
+                            Sign up</li>
+                        <li class="header__navbar-items header__navbar-items--strong">Sign in</li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="./assets/img/logo.png" alt="logo" class="logo" href>
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Type to search products">
+                            <!-- Search History -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Search History </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-items">
+                                        <a href="">Adidas Stan Smith</a>
+                                    </li>
+                                    <li class="header__search-history-items">
+                                        <a href="">Adidas Supper Star</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Inside shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Inside shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Outside shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">0</span>
+
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img class="header__cart-no-cart-img" src="./assets/img/empty-cart.png" alt="">
+
+                                <h4 class="header__cart-heading">Product added</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/n1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">This is name of product</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">This is description of
+                                                    product</span>
+                                                <span class="header__cart-item-remove">Remove</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view-cart btn btn--primary">Check it out Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app_container">
+            <div class="grid">
+                <div class="grid_row ">
+                    <div class="grid_column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fas fa-list"></i>
+                                Category
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Sneakers</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sport</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Boots</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sandals</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid_column-10">
+                        <div class="cart">
+                            <h5 class="cart_product">Product</h5>
+                            <h5 class="cart_price">Price</h5>
+                            <h5 class="cart_quantity">Quantity</h5>
+                            <h5 class="cart_total">Total</h5>
+                        </div>
+                        <div class="products">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Customer care</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Help center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">KiO blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">KiO Mall</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> About us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Introduce about Kio Shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Recruitment</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Kio terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Category</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sneakers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sport</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Boots</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sandals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Follow us on</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-facebook"></i>Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-instagram"></i>Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="footer__item--icon fab fa-linkedin"></i>Linkedln
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-5">
+                        <h3 class="footer__heading"> Download the Kio app now</h3>
+                        <div class="footer__qr">
+                            <img src="./assets/img/qr.png" alt="" class="footer__qr--img">
+                            <div class="footer__qr--apps">
+                                <a href="#" class="footer__qr--link">
+                                    <img src="./assets/img/ch-play.png" alt="" class="footer__qr--img-app">
+                                </a>
+                                <a href="#" class="footer__qr--link">
+                                    <img src="./assets/img/app_store.png" alt="" class="footer__qr--img-app">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__license">© 2020 <span class="footer__license--name">KiO-Shoes</span>. All rights reserved</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+    
+</html>
